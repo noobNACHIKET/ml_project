@@ -2,7 +2,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 
-cred = credentials.Certificate("D:/downloads/serviceAccountKey.json")
+cred = credentials.Certificate("/home/shree/Downloads/serviceAccountKey.json")
 firebase_admin.initialize_app(cred, {
     'databaseURL': "https://facerecognition-ml-default-rtdb.firebaseio.com/"
 })
@@ -10,7 +10,7 @@ firebase_admin.initialize_app(cred, {
 ref = db.reference('Students')
 
 data = {
-    "22110225":
+    "6":
         {
             "name": "Nachiket Patil",
             "major": "IT",
@@ -20,7 +20,7 @@ data = {
             "year": 4,
             "last_attendance_time": "2022-12-11 00:54:34"
         },
-    "22110995":
+    "8":
         {
             "name": "Swaraj Patil",
             "major": "IT",
@@ -30,7 +30,7 @@ data = {
             "year": 1,
             "last_attendance_time": "2022-12-11 00:54:34"
         },
-    "22110092":
+    "5":
         {
             "name": "Wasim Naikawadi",
             "major": "IT",
@@ -40,7 +40,7 @@ data = {
             "year": 2,
             "last_attendance_time": "2022-12-11 00:54:34"
         },
-    "22111290":
+    "7":
         {
             "name": "Manas Paratane",
             "major": "IT",
@@ -50,7 +50,7 @@ data = {
             "year": 2,
             "last_attendance_time": "2022-12-11 00:58:34"
         },
-        "22110000":
+        "4":
         {
             "name": "Dr. Pravin Futane",
             "major": "HOD IT",
